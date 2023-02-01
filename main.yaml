@@ -9,4 +9,4 @@ steps:
         "--entry-point=main",
         "--trigger-bucket=greet-bucket",
       ]
-    dir: /
+    dir: ./
