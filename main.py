@@ -6,5 +6,5 @@ def greet(message):
 
 
 @functions_framework.cloud_event
-def my_cloudevent_function(cloud_event):
+def main(cloud_event):
     greet(cloud_event.data)
