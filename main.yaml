@@ -1,0 +1,12 @@
+steps:
+  - name: "gcr.io/cloud-builders/gcloud"
+    args:
+      [
+        "functions",
+        "deploy",
+        "greet",
+        "--runtime=python37",
+        "--entry-point=main",
+        "--trigger-bucket=greet-bucket",
+      ]
+    dir: /
