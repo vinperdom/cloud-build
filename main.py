@@ -1,10 +1,10 @@
 import functions_framework
 
 
-def greet(message):
-    print("hello, ", message)
+def greet(name):
+    print("hello, ", name)
 
 
 @functions_framework.cloud_event
 def main(cloud_event):
-    greet(cloud_event.data)
+    greet(cloud_event.data['name'])
