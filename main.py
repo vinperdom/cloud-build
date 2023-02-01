@@ -2,7 +2,7 @@ import functions_framework
 
 
 def greet(name):
-    print("hello," + name)
+    print(f"hello, {name}")
 
 
 @functions_framework.cloud_event
